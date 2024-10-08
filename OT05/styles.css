@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#app {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #28a745;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin-top: 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.02);
+}
+
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+
+@media (max-width: 600px) {
+    #app {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
