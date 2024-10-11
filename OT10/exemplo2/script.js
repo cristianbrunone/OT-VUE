@@ -11,5 +11,10 @@ Vue.component('button-component', {
 
 //Instancia principal Vue
 new Vue({
-    el: '#app'
+    el: '#app',
+    methods: {
+        handleClick() {
+            alert('O Botão foi clicado!');
+        }
+    }
 });
